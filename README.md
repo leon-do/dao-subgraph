@@ -8,7 +8,7 @@
 
 `vi docker-compose.yml`
 
-`edit ethereum: 'mainnet:YOUR_RPC'`
+edit ethereum: 'mainnet:YOUR_RPC'
 
 `./setup.sh`
 
