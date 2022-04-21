@@ -2,9 +2,7 @@
 
 ## Start Subgraph
 
-`git clone https://github.com/graphprotocol/graph-node/
-cd graph-node/docker
-vi docker-compose.yml`
+`git clone https://github.com/graphprotocol/graph-node/`
 
 `cd graph-node/docker`
 
