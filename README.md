@@ -1,4 +1,4 @@
-# Governor Subgraph
+# DAO Subgraph
 
 ## Start Subgraph
 
