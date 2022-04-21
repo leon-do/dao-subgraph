@@ -1,0 +1,11 @@
+{
+  "output": "generate/sample.",
+  "chain": "mainnet",
+  "datasources": [
+    {
+      "address": "0x",
+      "startBlock": 123,
+      "module": ["governor"]
+    }
+  ]
+}
