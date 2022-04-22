@@ -3,8 +3,8 @@
   "chain": "mainnet",
   "datasources": [
     {
-      "address": "0x",
-      "startBlock": 123,
+      "address": "0xa909a263Bc8ffC2c06c3699abe4dd9b098167834",
+      "startBlock": 10546063,
       "module": ["governor"]
     }
   ]

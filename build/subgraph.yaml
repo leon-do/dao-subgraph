@@ -1,0 +1,32 @@
+specVersion: 0.0.2
+schema:
+  file: sample.schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: governor
+    network: mainnet
+    source:
+      address: "0xa909a263Bc8ffC2c06c3699abe4dd9b098167834"
+      abi: Governor
+      startBlock: 10546063
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - Governor
+      abis:
+        - name: Governor
+          file: node_modules/@openzeppelin/contracts/build/contracts/IGovernorTimelock.json
+      eventHandlers:
+        - event: ProposalCanceled(uint256)
+          handler: handleProposalCanceled
+        - event: ProposalCreated(uint256,address,address[],uint256[],string[],bytes[],uint256,uint256,string)
+          handler: handleProposalCreated
+        - event: ProposalExecuted(uint256)
+          handler: handleProposalExecuted
+        - event: ProposalQueued(uint256,uint256)
+          handler: handleProposalQueued
+        - event: VoteCast(indexed address,uint256,uint8,uint256,string)
+          handler: handleVoteCast
+      file: governor/governor.wasm
